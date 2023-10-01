@@ -1,0 +1,33 @@
+Introducion a Git
+
+Git es un sistema de control de versiones ampliamente utilizado que ha revolucionado la forma en que los equipos de desarrollo gestionan y colaboran en proyectos de software. Fue creado por Linus Torvalds en 2005 y se ha convertido en una herramienta fundamental en el mundo del desarrollo de software.
+
+La principal función de Git es rastrear y gestionar cambios en el código fuente de un proyecto a lo largo del tiempo. Permite a los desarrolladores llevar un registro de las modificaciones realizadas en sus archivos, facilitando la colaboración en equipo, la gestión de versiones y la reversión a estados anteriores del proyecto en caso de problemas.
+
+Flujo de trabajo
+
+Un flujo de trabajo básico con Git implica una serie de pasos que los desarrolladores siguen para colaborar en un proyecto, realizar cambios en el código y gestionar versiones. Aquí tienes los pasos esenciales de un flujo de trabajo básico con Git:
+
+Configuración inicial: 
+
+Antes de empezar a trabajar con Git, es importante configurar tu identidad, lo que incluye tu nombre de usuario y dirección de correo electrónico. Esto se hace una vez en tu sistema y se utiliza para registrar quién realizó cada cambio en el repositorio.
+
+Creación de un repositorio: 
+
+Para comenzar a utilizar Git en un proyecto, debes inicializar un repositorio Git en la carpeta del proyecto. Esto se hace con el 
+
+Añadir archivos al repositorio: 
+
+Antes de que Git pueda rastrear cambios en tus archivos, debes agregarlos al área de preparación (staging area). Puedes hacerlo con el comando git add seguido del nombre de los archivos o directorios que deseas incluir
+
+Repositorios Remotos
+
+Los repositorios remotos son copias de un repositorio Git alojadas en servidores en línea o en otros sistemas informáticos accesibles a través de una red. Estos repositorios permiten a los desarrolladores colaborar en proyectos, compartir código y mantener un historial centralizado de las versiones de su proyecto. Los servicios de alojamiento de repositorios remotos más comunes son GitHub, GitLab y Bitbucket, aunque también puedes configurar repositorios remotos en servidores propios.
+
+Clonar un repositorio remoto:
+
+Para comenzar a trabajar en un proyecto que está alojado en un servidor remoto, generalmente clonas (descargas) el repositorio remoto a tu máquina local utilizando el comando git clone. Esto crea una copia local completa del repositorio remoto en tu sistema.
+
+Agregar un repositorio remoto: 
+
+Puedes configurar múltiples repositorios remotos para un proyecto local. El repositorio remoto principal suele llamarse "origin" de forma predeterminada. Puedes agregar otros repositorios remotos con el comando git remote add.
