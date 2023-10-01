@@ -9,15 +9,12 @@ Flujo de trabajo
 Un flujo de trabajo básico con Git implica una serie de pasos que los desarrolladores siguen para colaborar en un proyecto, realizar cambios en el código y gestionar versiones. Aquí tienes los pasos esenciales de un flujo de trabajo básico con Git:
 
 Configuración inicial: 
-
 Antes de empezar a trabajar con Git, es importante configurar tu identidad, lo que incluye tu nombre de usuario y dirección de correo electrónico. Esto se hace una vez en tu sistema y se utiliza para registrar quién realizó cada cambio en el repositorio.
 
 Creación de un repositorio: 
-
 Para comenzar a utilizar Git en un proyecto, debes inicializar un repositorio Git en la carpeta del proyecto. Esto se hace con el 
 
 Añadir archivos al repositorio: 
-
 Antes de que Git pueda rastrear cambios en tus archivos, debes agregarlos al área de preparación (staging area). Puedes hacerlo con el comando git add seguido del nombre de los archivos o directorios que deseas incluir
 
 Repositorios Remotos
@@ -25,9 +22,22 @@ Repositorios Remotos
 Los repositorios remotos son copias de un repositorio Git alojadas en servidores en línea o en otros sistemas informáticos accesibles a través de una red. Estos repositorios permiten a los desarrolladores colaborar en proyectos, compartir código y mantener un historial centralizado de las versiones de su proyecto. Los servicios de alojamiento de repositorios remotos más comunes son GitHub, GitLab y Bitbucket, aunque también puedes configurar repositorios remotos en servidores propios.
 
 Clonar un repositorio remoto:
-
 Para comenzar a trabajar en un proyecto que está alojado en un servidor remoto, generalmente clonas (descargas) el repositorio remoto a tu máquina local utilizando el comando git clone. Esto crea una copia local completa del repositorio remoto en tu sistema.
 
 Agregar un repositorio remoto: 
-
 Puedes configurar múltiples repositorios remotos para un proyecto local. El repositorio remoto principal suele llamarse "origin" de forma predeterminada. Puedes agregar otros repositorios remotos con el comando git remote add.
+
+Gestion de Ramas
+
+La gestión de ramas es una parte fundamental del flujo de trabajo con Git. Las ramas permiten a los desarrolladores trabajar en nuevas características, solucionar problemas o experimentar con el código sin afectar directamente a la rama principal del proyecto (generalmente llamada main o master).
+
+Crear una rama:
+Puedes crear una nueva rama utilizando el comando git branch seguido del nombre de la nueva rama. Por ejemplo, para crear una rama llamada "nueva-caracteristica":
+
+Cambiar a una rama: 
+Para cambiar de la rama actual a otra rama existente, utiliza el comando git checkout seguido del nombre de la rama. Esto te permite comenzar a trabajar en la nueva rama.
+
+Resolver conflictos de fusión: Si hay conflictos entre los cambios en las ramas que intentas fusionar, Git te indicará los archivos en conflicto y te pedirá que los resuelvas manualmente. Después de resolver los conflictos, debes confirmar los cambios para completar la fusión.
+
+Rebasing:
+Otra forma de incorporar cambios de una rama en otra es utilizando el comando git rebase. A diferencia de git merge, git rebase reescribe la historia del proyecto para que parezca que los cambios se aplicaron en secuencia en lugar de fusionar ramas. Esto puede dar como resultado un historial más lineal.
